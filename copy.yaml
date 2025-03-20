@@ -1,0 +1,11 @@
+-
+  name: copy 
+  hosts: dev_host
+  tasks:
+    - name: copy the contents 
+      copy:
+        src: /tmp/a.txt
+        dest: /tmp/
+        mode: 0664
+        owner: root
+        group: root  
